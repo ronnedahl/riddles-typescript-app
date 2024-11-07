@@ -1,0 +1,214 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 16, 18);
+}
+
+.riddles-container{
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,219,1) 45%, rgba(0,212,255,1) 100%);
+    padding-bottom:4rem;
+    border:5px solid black
+
+}
+
+.riddle-question__container h1{
+    font-size:4rem;
+    font-weight: 100;
+    transform: scale(1.4)
+}
+
+.riddles-container .counter-riddle{
+    background-color: #cedde7;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width:80%;
+    margin:0 auto;
+    padding:1rem 0;
+    margin-top:2rem
+}
+
+
+
+.riddles-container p{
+    color:green;
+}
+
+
+.counter-riddle h2{
+    color:#0b0b0b;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(255, 255, 0,0.3);
+    
+}
+
+.riddles-container__questions {
+    width:93%;
+    height:200px;
+    max-width: 100%;
+    background-color: #cedde7;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+   
+}
+
+
+
+
+.riddle-question__container{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .riddle-question__container h1{
+        font-size: 3rem;
+    }
+
+.riddle-hint__one-container{
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.riddle-hint__one-container h4{
+    font-size:2rem;
+
+}
+
+.riddles-container__questions h1 {
+    color:#000;
+    
+    font-size: 1.4rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.riddles-container__questions h3 {
+    color: green;
+    font-size: 3.6rem;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 1rem; /* Lägg till marginal för att separera från frågan */
+}
+.riddles-container__questions h6,
+.riddles-container__questions h5,
+.riddles-container__questions h4{
+
+color:#000;
+}
+
+.riddles-container__input-answer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+input[type=text]{
+    padding:1.5rem 7rem;
+    border: 2px solid #000;
+}
+.btn-wrapper{
+    margin-top:8rem;
+   
+}
+
+
+.riddles-container button{
+    padding:1rem;
+    width:400px;
+    
+}
+
+.riddles-container .btn{
+    display:flex;
+    justify-content: center;
+}
+
+.riddles-container .btn-two{
+    margin-top:1rem;
+}
+
+.btn-wrapper .btn__group{
+   margin-bottom:4rem;
+  
+    
+}
+
+.riddles-container .blue button{
+    background-color: rgb(36, 16, 215);
+    color:#FFF;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.riddles-container .red button{
+    background-color: red;
+    color:#FFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.riddles-container .pink button{
+   background: rgb(60,16,16);
+background: linear-gradient(90deg, rgba(60,16,16,1) 0%, rgba(0,0,0,1) 17%, rgba(95,95,101,1) 100%, rgba(100,112,115,1) 100%);
+    margin-top:1rem;
+    color:#FFF;
+    border:2px solid black;
+    border-radius:5px;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+.counter-riddle{
+    display:flex;
+    justify-content: center;
+    margin-top:15px;
+}
+
+.counter-riddle h2{
+    font-size:1.5rem;
+}
+
+@media(max-width:765px){
+    .riddles-container{
+        height: 100vh;
+    }
+
+    .btn-wrapper{
+
+        width:80%;
+        margin: 0 auto;
+        margin-top:6rem;
+    }
+    .riddles-container__questions h1{
+        max-width: 250px;
+    }
+}
